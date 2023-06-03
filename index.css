@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Italianno&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.5rem;font-family:Italianno;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+
+header,nav,main,footer{
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+header,footer{
+    position: sticky;
+    background-color: black;
+    color: aliceblue;
+}
+
+header{
+    top:0;    
+}
+
+nav{
+    background-color: bisque;
+    color: black;
+    padding: 1.5rem;
+    height: 3vh;
+    }
+
+main{
+    flex-grow: 1;
+}
+.main{   
+    font-size: 2rem;
+}
+
+footer{
+    bottom: 0;
+}
+/*SMALL*/
+@media screen and (min-width:576px){
+    body{
+        background-color: green;    
+    }
+    nav{
+        display: none;
+    }   
+     .main{
+        font-size: 2rem;
+     }     
+}
+
+/*MEDIUM*/
+@media screen and (min-width:768px){
+    body{
+        background-color: rgb(82, 41, 159);    
+    }
+    nav{
+        display: none;
+    }   
+    .main{
+        font-size: 2.5rem;
+    } 
+}
+
+/*LARGE*/
+@media screen and (min-width:992px){
+    body{
+        background-color: rgb(214, 232, 7);    
+    }
+    nav{
+        display: none;
+    } 
+    .main{
+    font-size: 3rem;
+    }   
+}
+
+/*XL*/
+@media screen and (min-width:1200px){
+    body{
+        background-color: rgb(210, 6, 118);    
+    }
+    
+    main{
+        font-size: 4rem;  
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    } 
+}
+
+/*MOBILE DEVICE LANDSCAPE*/
+@media screen and (max-height:425px){
+    body{
+        background-color: rgb(8, 173, 233);    
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    nav{
+        display: none;
+    }    
+}
+
